@@ -14,8 +14,20 @@
 		AB19C3681D7CA8E900396B3A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB19C3661D7CA8E900396B3A /* Main.storyboard */; };
 		AB19C36A1D7CA8E900396B3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB19C3691D7CA8E900396B3A /* Assets.xcassets */; };
 		AB19C36D1D7CA8E900396B3A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB19C36B1D7CA8E900396B3A /* LaunchScreen.storyboard */; };
-		AB19C3781D7CA8E900396B3A /* Passion_ProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB19C3771D7CA8E900396B3A /* Passion_ProjectTests.swift */; };
+		AB19C3781D7CA8E900396B3A /* Note_TakerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB19C3771D7CA8E900396B3A /* Note_TakerTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXBuildRule section */
+		AB19C3821D7E393A00396B3A /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.proxy.script;
+			fileType = sourcecode.metal;
+			isEditable = 1;
+			outputFiles = (
+			);
+			script = "# <com.apple.compilers.metal.osx>\n";
+		};
+/* End PBXBuildRule section */
 
 /* Begin PBXContainerItemProxy section */
 		AB19C3741D7CA8E900396B3A /* PBXContainerItemProxy */ = {
@@ -28,7 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		AB19C35A1D7CA8E900396B3A /* Passion Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Passion Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB19C35A1D7CA8E900396B3A /* Note Taker.temp_caseinsensitive_rename.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Note Taker.temp_caseinsensitive_rename.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB19C35D1D7CA8E900396B3A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AB19C3601D7CA8E900396B3A /* Passion_Project.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Passion_Project.xcdatamodel; sourceTree = "<group>"; };
 		AB19C3621D7CA8E900396B3A /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
@@ -37,8 +49,8 @@
 		AB19C3691D7CA8E900396B3A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AB19C36C1D7CA8E900396B3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AB19C36E1D7CA8E900396B3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AB19C3731D7CA8E900396B3A /* Passion ProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Passion ProjectTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		AB19C3771D7CA8E900396B3A /* Passion_ProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Passion_ProjectTests.swift; sourceTree = "<group>"; };
+		AB19C3731D7CA8E900396B3A /* Note Taker.temp_caseinsensitive_rename.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Note Taker.temp_caseinsensitive_rename.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB19C3771D7CA8E900396B3A /* Note_TakerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note_TakerTests.swift; sourceTree = "<group>"; };
 		AB19C3791D7CA8E900396B3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -63,8 +75,8 @@
 		AB19C3511D7CA8E900396B3A = {
 			isa = PBXGroup;
 			children = (
-				AB19C35C1D7CA8E900396B3A /* Passion Project */,
-				AB19C3761D7CA8E900396B3A /* Passion ProjectTests */,
+				AB19C35C1D7CA8E900396B3A /* NoteTaker */,
+				AB19C3761D7CA8E900396B3A /* NoteTakerTests */,
 				AB19C35B1D7CA8E900396B3A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -72,13 +84,13 @@
 		AB19C35B1D7CA8E900396B3A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AB19C35A1D7CA8E900396B3A /* Passion Project.app */,
-				AB19C3731D7CA8E900396B3A /* Passion ProjectTests.xctest */,
+				AB19C35A1D7CA8E900396B3A /* Note Taker.temp_caseinsensitive_rename.app */,
+				AB19C3731D7CA8E900396B3A /* Note Taker.temp_caseinsensitive_rename.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		AB19C35C1D7CA8E900396B3A /* Passion Project */ = {
+		AB19C35C1D7CA8E900396B3A /* NoteTaker */ = {
 			isa = PBXGroup;
 			children = (
 				AB19C35D1D7CA8E900396B3A /* AppDelegate.swift */,
@@ -90,41 +102,44 @@
 				AB19C36E1D7CA8E900396B3A /* Info.plist */,
 				AB19C35F1D7CA8E900396B3A /* Passion_Project.xcdatamodeld */,
 			);
+			name = NoteTaker;
 			path = "Passion Project";
 			sourceTree = "<group>";
 		};
-		AB19C3761D7CA8E900396B3A /* Passion ProjectTests */ = {
+		AB19C3761D7CA8E900396B3A /* NoteTakerTests */ = {
 			isa = PBXGroup;
 			children = (
-				AB19C3771D7CA8E900396B3A /* Passion_ProjectTests.swift */,
+				AB19C3771D7CA8E900396B3A /* Note_TakerTests.swift */,
 				AB19C3791D7CA8E900396B3A /* Info.plist */,
 			);
+			name = NoteTakerTests;
 			path = "Passion ProjectTests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		AB19C3591D7CA8E900396B3A /* Passion Project */ = {
+		AB19C3591D7CA8E900396B3A /* Note Taker */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AB19C37C1D7CA8E900396B3A /* Build configuration list for PBXNativeTarget "Passion Project" */;
+			buildConfigurationList = AB19C37C1D7CA8E900396B3A /* Build configuration list for PBXNativeTarget "Note Taker" */;
 			buildPhases = (
 				AB19C3561D7CA8E900396B3A /* Sources */,
 				AB19C3571D7CA8E900396B3A /* Frameworks */,
 				AB19C3581D7CA8E900396B3A /* Resources */,
 			);
 			buildRules = (
+				AB19C3821D7E393A00396B3A /* PBXBuildRule */,
 			);
 			dependencies = (
 			);
-			name = "Passion Project";
+			name = "Note Taker";
 			productName = "Passion Project";
-			productReference = AB19C35A1D7CA8E900396B3A /* Passion Project.app */;
+			productReference = AB19C35A1D7CA8E900396B3A /* Note Taker.temp_caseinsensitive_rename.app */;
 			productType = "com.apple.product-type.application";
 		};
-		AB19C3721D7CA8E900396B3A /* Passion ProjectTests */ = {
+		AB19C3721D7CA8E900396B3A /* Note TakerTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AB19C37F1D7CA8E900396B3A /* Build configuration list for PBXNativeTarget "Passion ProjectTests" */;
+			buildConfigurationList = AB19C37F1D7CA8E900396B3A /* Build configuration list for PBXNativeTarget "Note TakerTests" */;
 			buildPhases = (
 				AB19C36F1D7CA8E900396B3A /* Sources */,
 				AB19C3701D7CA8E900396B3A /* Frameworks */,
@@ -135,9 +150,9 @@
 			dependencies = (
 				AB19C3751D7CA8E900396B3A /* PBXTargetDependency */,
 			);
-			name = "Passion ProjectTests";
+			name = "Note TakerTests";
 			productName = "Passion ProjectTests";
-			productReference = AB19C3731D7CA8E900396B3A /* Passion ProjectTests.xctest */;
+			productReference = AB19C3731D7CA8E900396B3A /* Note Taker.temp_caseinsensitive_rename.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -152,6 +167,8 @@
 				TargetAttributes = {
 					AB19C3591D7CA8E900396B3A = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = RH8925C7T2;
+						LastSwiftMigration = 0800;
 					};
 					AB19C3721D7CA8E900396B3A = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -159,7 +176,7 @@
 					};
 				};
 			};
-			buildConfigurationList = AB19C3551D7CA8E900396B3A /* Build configuration list for PBXProject "Passion Project" */;
+			buildConfigurationList = AB19C3551D7CA8E900396B3A /* Build configuration list for PBXProject "Note Taker" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -172,8 +189,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				AB19C3591D7CA8E900396B3A /* Passion Project */,
-				AB19C3721D7CA8E900396B3A /* Passion ProjectTests */,
+				AB19C3591D7CA8E900396B3A /* Note Taker */,
+				AB19C3721D7CA8E900396B3A /* Note TakerTests */,
 			);
 		};
 /* End PBXProject section */
@@ -214,7 +231,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AB19C3781D7CA8E900396B3A /* Passion_ProjectTests.swift in Sources */,
+				AB19C3781D7CA8E900396B3A /* Note_TakerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,7 +240,7 @@
 /* Begin PBXTargetDependency section */
 		AB19C3751D7CA8E900396B3A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = AB19C3591D7CA8E900396B3A /* Passion Project */;
+			target = AB19C3591D7CA8E900396B3A /* Note Taker */;
 			targetProxy = AB19C3741D7CA8E900396B3A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -335,10 +352,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Passion Project/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.example.Passion-Project";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.NoteTaker;
+				PRODUCT_NAME = "Note Taker.temp_caseinsensitive_rename";
+				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -346,10 +367,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Passion Project/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.example.Passion-Project";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.NoteTaker;
+				PRODUCT_NAME = "Note Taker.temp_caseinsensitive_rename";
+				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -360,8 +385,8 @@
 				INFOPLIST_FILE = "Passion ProjectTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.example.Passion-ProjectTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Passion Project.app/Passion Project";
+				PRODUCT_NAME = "Note Taker.temp_caseinsensitive_rename";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Note Taker.temp_caseinsensitive_rename.app/Note Taker.temp_caseinsensitive_rename";
 			};
 			name = Debug;
 		};
@@ -372,15 +397,15 @@
 				INFOPLIST_FILE = "Passion ProjectTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.example.Passion-ProjectTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Passion Project.app/Passion Project";
+				PRODUCT_NAME = "Note Taker.temp_caseinsensitive_rename";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Note Taker.temp_caseinsensitive_rename.app/Note Taker.temp_caseinsensitive_rename";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		AB19C3551D7CA8E900396B3A /* Build configuration list for PBXProject "Passion Project" */ = {
+		AB19C3551D7CA8E900396B3A /* Build configuration list for PBXProject "Note Taker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AB19C37A1D7CA8E900396B3A /* Debug */,
@@ -389,21 +414,23 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AB19C37C1D7CA8E900396B3A /* Build configuration list for PBXNativeTarget "Passion Project" */ = {
+		AB19C37C1D7CA8E900396B3A /* Build configuration list for PBXNativeTarget "Note Taker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AB19C37D1D7CA8E900396B3A /* Debug */,
 				AB19C37E1D7CA8E900396B3A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		AB19C37F1D7CA8E900396B3A /* Build configuration list for PBXNativeTarget "Passion ProjectTests" */ = {
+		AB19C37F1D7CA8E900396B3A /* Build configuration list for PBXNativeTarget "Note TakerTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AB19C3801D7CA8E900396B3A /* Debug */,
 				AB19C3811D7CA8E900396B3A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

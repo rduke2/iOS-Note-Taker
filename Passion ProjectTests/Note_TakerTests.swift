@@ -1,15 +1,15 @@
 //
-//  Passion_ProjectTests.swift
-//  Passion ProjectTests
+//  Note_TakerTests.swift
+//  Note Taker Tests
 //
 //  Created by Randy Duke II on 9/4/16.
 //  Copyright © 2016 Moth. All rights reserved.
 //
 
 import XCTest
-@testable import Passion_Project
+@testable import Note_Taker
 
-class Passion_ProjectTests: XCTestCase {
+class Note_TakerTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
