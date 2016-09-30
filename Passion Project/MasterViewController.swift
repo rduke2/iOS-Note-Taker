@@ -24,20 +24,25 @@ class MasterViewController: UITableViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         self.navigationItem.leftBarButtonItem = self.editButtonItem
+        masterView = self
         load()
         let addButton = UIBarButtonItem(barButtonSystemItem: .add, target: self, action:
             #selector(MasterViewController.insertNewObject(_:)))
         self.navigationItem.rightBarButtonItem = addButton
-        if let split = self.splitViewController {
-            let controllers = split.viewControllers
-            detailViewController = (controllers[controllers.count-1] as! UINavigationController).topViewController as? DetailViewController
-        }
     }
 
     override func viewWillAppear(_ animated: Bool) {
         self.clearsSelectionOnViewWillAppear = self.splitViewController!.isCollapsed
         save()
         super.viewWillAppear(animated)
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        if objects.count == 0 {
+            insertNewObject(self)
+        }
+        
+        super.viewDidAppear(animated)
     }
 
     override func didReceiveMemoryWarning() {
@@ -46,9 +51,14 @@ class MasterViewController: UITableViewController {
     }
 
     func insertNewObject(_ sender: AnyObject) {
-        objects.insert(BLANK_NOTE, at: 0)
-        let indexPath = IndexPath(row: 0, section: 0)
-        self.tableView.insertRows(at: [indexPath], with: .automatic)
+        if objects.count == 0 || objects[0] != BLANK_NOTE {
+            objects.insert(BLANK_NOTE, at: 0)
+            let indexPath = IndexPath(row: 0, section: 0)
+            self.tableView.insertRows(at: [indexPath], with: .automatic)
+        }
+       
+        currentIndex = 0
+        self.shouldPerformSegue(withIdentifier: "showDetail", sender: self)
     }
 
     // MARK: - Segues
@@ -57,10 +67,10 @@ class MasterViewController: UITableViewController {
         if segue.identifier == "showDetail" {
             if let indexPath = self.tableView.indexPathForSelectedRow {
             let object = objects[(indexPath as NSIndexPath).row]
-                let controller = (segue.destination as! UINavigationController).topViewController as! DetailViewController
-                controller.detailItem = object as AnyObject?
-                controller.navigationItem.leftBarButtonItem = self.splitViewController?.displayModeButtonItem
-                controller.navigationItem.leftItemsSupplementBackButton = true
+                currentIndex = indexPath.row
+                detailViewController?.detailItem = object as AnyObject?
+                detailViewController?.navigationItem.leftBarButtonItem = self.splitViewController?.displayModeButtonItem
+                detailViewController?.navigationItem.leftItemsSupplementBackButton = true
             }
         }
     }
@@ -95,6 +105,18 @@ class MasterViewController: UITableViewController {
         } else if editingStyle == .insert {
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view.
         }
+    }
+    
+    override func setEditing(_ editing: Bool, animated: Bool) {
+        super.setEditing(editing, animated: animated)
+        if editing {
+            return
+        }
+        save()
+    }
+    
+    override func tableView(_ tableView: UITableView, didEndEditingRowAt indexPath: IndexPath?) {
+        save()
     }
     
     func save() {
